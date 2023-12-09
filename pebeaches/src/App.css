@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Inter&family=Istok+Web&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #FFFFFF;
+    background-image: url(../src/img/andre-magalhaes-VTnqMcGNM1w-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Inter', sans-serif;
+}
+
+.buttons button{
+    align-items: center;
+    border: none;
+    font-size: 23px;
+    font-weight: bold;
+    justify-content: center;
+    height: 48px;
+    width: 163px;
+    transition: all 0.3 ease;
+}
+
+.buttons button:hover a{
+    cursor: pointer;
+    color: #165DC8;
+}
+
+.buttons button:active{
+    background-color: #aed8ff;
+}
+
+.buttons a {
+    color: #1A2955;
+}
+
+.navbar img{
+    display: block;
+    width: 40px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+}
+
+.navbar img:hover{
+    cursor: pointer;
+}
+
+.navbar ul li {
+    display: none;
+}
+
+.menu-items.menu ul li{
+    display: flex;
+    margin-top: 7px;
+}
+
+.menu-items.menu li a{
+    margin-left: 35%;
+    text-decoration: none;
+    color: #083579;
+}
+
+.menu-items.menu ul li:hover a{
+    color: #165DC8;
+}
+
+.menu-items.menu{
+    list-style: none;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 16px;
+    width: 200px;
+    height: 100px;
+    padding-top: 1px;
+    top: 45px;
+    left: 70px;
+    position: absolute;
+    transition: all 0.5 ease;
+}
+
+.homepage-titles h1{
+    color: #165DC8;
+    font-size: 80px;
+    font-family: 'Asap', sans-serif;
+    margin-left: 39%;
+    margin-top: 5%;
+    text-shadow: rgb(68, 69, 70) 1px 0 2px;
+}
+
+.homepage-titles h2{
+    color: rgb(2, 6, 63);
+    font-size: 80px;
+    font-family: 'Istok Web', sans-serif;
+    margin-left: 41.5%;
+    text-shadow:-3px -3px 0 white,  
+     3px -3px 0 white,
+    -3px  3px 0 white,
+     3px  3px 0 white;
+}
+
+.homepage-container{
+    display:grid;
+    grid-gap: 10px;
+    align-items: center;
+    background-color: #040B1F;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    top: 70%;
+    bottom: 0%;
+    position: absolute;
+}
+
+.homepage-descriptionlist{
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 28px;
+    margin-top: 35px;
+    margin-bottom: 75px;
+    line-height: 55px;
+}
+
+.homepage-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.login-button {
+    margin-right: 80px;
+}
+
+.login-button button, .cadastro-button button {
+    width: 250px;
+}
+
+.form {
+    display: grid;
+    grid-template-areas: "form";
+    align-items: center;
+    background-color: #040B1F;
+    color: #B5C9FF;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+    left:30%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    justify-content: center;
+}
+
+.form-title{
+    color: white;
+    font-size: 32px;
+    padding-bottom: 50px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.form-inputs input{
+    font-size: 16px;
+    margin-top: 14px;
+    height: 42px;
+    width: 350px;
+}
+
+.topic-inputs {
+    color: white;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.topic-inputs input {
+    margin-right: 20px;
+}
+
+.continue-button{
+    display: flex;
+}
+
+.continue-button button{
+    margin-top: 65px;
+    margin-left: 75px;
+}
+
+@media screen and (max-width:1330px){
+    .form{
+        left: 0%;
+    }
+
+    .homepage-titles h1{
+        font-size: 60px;
+    }
+
+    .homepage-titles h2{
+        font-size: 60px;
+    }
+
+    .homepage-descriptionlist{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1064px){
+    .homepage-descriptionlist{
+        font-size: 15px;
+    }
+}
